@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>My First HTML Page</title>
+    <style>
+    h2 {
+      color: darkred;
+    }
+    </style>
+    </head>
+    <body>
+
+        <h1 style="color: darkorange;">This is Suvi</h1>
+        <p>I am very social, fun-seeking, <br>
+        outgoing and curious person.</p>
+        <blockquote class="quote">
+        To not dance when you had the health and could hear the music,<br>
+        could be the biggest regret of your life
+        <style>.quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: darkorange;
+      }
+      </style>
+      </blockquote>
+        <img src="matrixlasit.jpg" alt="I found cool Matrix-style sunnies" class="filter-image">
+      <style>.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+</style>
+      
+    
+<h2>My hobbies</h2>
+<ol>
+  <li>Running</li>
+  <li>Gym</li>
+  <li>Driftstores</li>
+</ol>
+
+    <ul class="pseudo-list">
+        <li>Pink</li>
+        <li>Blue</li>
+        <li>Pink</li>
+        <li>Blue</li>
+     
+<style>.pseudo-list li:nth-child(odd) {
+        background-color: magenta;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: cornflowerblue;
+      }</style>
+ </ul>
+
+    <a href="https://www.if.fi/henkiloasiakkaat">I work here</a>
+
+<div class="content-box">
+  <h3>I am learning CSS</h3>
+  <p>This is actually HTML</p>
+  <style>
+    .content-box {
+  padding: 35px;
+  margin: 20px;
+  background-color: #74b8f3;
+  border: 3px solid #10062c;
+}
+  </style>
+</div>
+<br>
+<button class="transition-button">Look at this button</button>
+<style>.transition-button {
+        background-color: yellowgreen;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: darkgreen;
+      }</style>
+<br>
+<br>
+    <table>
+    <br>
+    <tr>
+        <th>Favourite food</th>
+        <th>Favourite drinks</th>
+    </tr>
+    <tr>
+        <td>French fries <br>
+        aaand everything else made from potato</td>
+        <td>Raspberry soda</td>
+    </tr>
+    <tr>
+        <td>Porridge</td>
+        <td>Coca Cola</td>
+    </tr>
+    <tr>
+        <td>Sweet potato</td>
+        <td>Blanc 1664 beer</td>
+    </tr>
+    <style>table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 3px solid #210853;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #74b8f3;
+    }</style>
+    </table>
+    <br>
+    <div class="animation-box"></div>
+    <style>.animation-box {
+        width: 160px;
+        height: 50px;
+        background-color: yellowgreen;
+        position: relative;
+        animation: move 2s infinite alternate-reverse;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }</style>
+
+    <form>
+    <br> 
+    <br>
+    <br> 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    <style>    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }</style>
+    </form>
+<style>  
+    p {color: blue;
+    }
+    
+    body {
+      background-color: lightgray;
+    }
+    
+    h1 {
+      font-size: 4em;
+}
+    </style>
+    
+</body>
+</html>
