@@ -1,0 +1,98 @@
+<header>
+  <h1>Semantiikkaa</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!--En tiedä miksi validator herjaa css:n style-elementin aloituksista, en osaa korjata niitä-->
+<main>
+  <section id="about">
+    <h2>Workshop 4</h2>
+    <p>Tämähän alkaa olla ihan hauskaa.</p>
+  </section>
+</main>
+<br>
+<div class="grid-container">
+  <div class="grid-item">⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆</div>
+  <div class="grid-item">ᯓ★</div>
+  <div class="grid-item">˚˖𓍢ִ໋❀</div>
+  <div class="grid-item">𖹭</div>
+  <div class="grid-item">𓅰 𓅬 𓅭 𓅮 𓅯</div>
+  <div class="grid-item">𓍯𓂃𓏧♡</div>
+  <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgb(251, 178, 209);
+  padding: 20px;
+  text-align: center;
+}</style>
+</div>
+<br>
+<div class="flex-container">
+  <div class="box">This</div>
+  <div class="box">is</div>
+  <div class="box">fun</div>
+  <style>
+  .flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(244, 152, 6);
+  padding: 60px;
+  text-align: center;
+}
+  </style>
+</div>
+<br>
+<div class="responsive-box">Katteles isompana ni tapahtuu ihmeitä. Ja pienennä takasi.
+<style>
+  .responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(248, 190, 103);
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(240, 67, 171);
+      }
+}
+</style>
+</div>
+
+<footer>
+  <p>Copyright 2026</p>
+</footer>
+<style>
+    p {color: rgb(215, 29, 116);
+    }
+    
+    body {
+      background-color: rgb(242, 246, 191);
+    }
+    
+    h1 {
+      font-size: 3.5em;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+    </style>
